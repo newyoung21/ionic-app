@@ -1,0 +1,29 @@
+<ion-view view-title="Your Title!">
+	<ion-header-bar align-title="left" class="color">
+		<a href="#/tab/home"  class="button icon-left ion-chevron-left button-clear button-dark"></a>
+	</ion-header-bar>
+	<ion-content has-subheader="false">
+		<div class="login-img">
+			<img src="images/me_03.jpg" alt="">
+		</div>
+		<form novalidate name="form" ng-submit="login()">
+			<div class="list">
+			  <label class="item item-input">
+			    <span class="input-label">用户名</span>
+			    <input type="text" ng-model="user.username" required>
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">密码</span>
+			    <input type="password" ng-model="user.password" required>
+			  </label>
+			</div>
+			<div class="padding">
+			    <button class="button button-block button-positive" ng-disabled="form.$invalid">登录</button>
+			</div>
+		</form>
+		<p class="ress">	
+			<a href="#/register" nav-direction="forward">注册</a>	
+		</p>
+			
+	</ion-content>
+</ion-view>

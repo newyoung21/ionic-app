@@ -1,0 +1,50 @@
+<ion-view id="details" view-title="details" cache-view="false">
+     <header>
+       <div id="header">
+         <div class="headLeft"><a ng-click="goback()" nav-direction="back"></a></div>
+         <div class="headRight">
+           <img src="images/heat_03.png" alt="" class="heatImg" ng-click="collect()">
+         </div>
+         <div class="head-main">
+           技师信息
+         </div>
+       </div>
+     </header>
+  <ion-content>
+    <div id="details">
+      <div class="about">
+        <img ng-src="{{goods.img}}" alt="">
+      </div>
+      <div class="mess">
+        <p>编号：<span>{{goods.nubmer}}</span></p>
+        <p>年龄：<span>{{goods.age}}</span></p>
+        <p>评价：<span>{{goods.evaluate}}</span></p>
+        <div class="share">
+          <a href=""><img src="images/fx_03.png" alt=""></a>
+          <p>分享</p>
+        </div>
+      </div>
+      <div class="appointment">
+        <p class="appop">
+          <span>可预约时间:</span>
+          <select ng-init="names.rr = names.data[0]" ng-model="names.rr" ng-options="x for x in names.data">
+          </select>
+        </p>
+      </div>
+      <div class="comment">
+        <p class="com-title">技师评价</p>
+        <div class="com-data" ng-repeat="item in leave">
+          <p ><img ng-src="{{item.img}}" alt="图片" class="com-dI">
+            <span>{{item.username}}</span>
+          </p>
+          <p>{{item.contnet}}</p>
+          <p class="comT">{{item.time}}</p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+   <div class="car">
+      <a ng-click="showPopup()">立即预约</a>
+    </div>
+</ion-view>
+

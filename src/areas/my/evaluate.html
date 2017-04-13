@@ -1,0 +1,116 @@
+<ion-view style="background-color: #dbdbdb;">
+	<header>
+		<div id="header">
+			<div class="headLeft"><a ng-click="goback()"></a></div>
+			<div class="head-main">
+				评价中心
+			</div>
+		</div>
+	</header>
+	<div id="evaluate">
+		<form ng-submit="sub(id)" name="formdata" novalidate>
+			<div class="oddNumbers">
+				服务单号：{{order}}
+			</div>
+			<div class="Etext">
+				<textarea class="tarea" placeholder="写下本次体验的感受吧，来帮助其他小伙伴～" name="contnet" required ng-model="comment.contnet"></textarea>
+			</div>
+			<div class="anonymous">
+				<input type="checkbox" id="nm" class="cbox" ng-model="a">
+				<label for="nm"></label>
+				<span>匿名评价</span>
+			</div>
+			<div class="service-eva">
+				<div class="sevaTitle">
+					<img src="images/sev.png" alt="">
+					<span>服务评价</span>
+					<span class="s-right">满意请给五星哦</span>
+				</div>
+				<div class="pjstar">
+					<span>环境评价</span>
+					<div class="d-stars">
+						<ul class="pj-ulimg">
+							<li>
+								<label for="n1"></label>
+								<input type="radio" name="aa" ng-model="pp" value="1" id="n1" required>
+							</li>
+							<li>
+								<label for="n2"></label>
+								<input type="radio" name="aa" ng-model="pp" value="2" id="n2">
+							</li>
+							<li>
+								<label for="n3"></label>
+								<input type="radio" name="aa" ng-model="pp" value="3" id="n3">
+							</li>
+							<li>
+								<label for="n4"></label>
+								<input type="radio" name="aa" ng-model="pp" value="4" id="n4">
+							</li>
+							<li>
+								<label for="n5"></label>
+								<input type="radio" name="aa" ng-model="pp" value="5" id="n5">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="pjstar">
+					<span>技术评价</span>
+					<div class="d-stars">
+						<ul class="pj-ulimg">
+							<li>
+								<label for="j1"></label>
+								<input type="radio" name="aa" ng-model="js" value="1" id="j1" required>
+							</li>
+							<li>
+								<label for="j2"></label>
+								<input type="radio" name="aa" ng-model="js" value="2" id="j2">
+							</li>
+							<li>
+								<label for="j3"></label>
+								<input type="radio" name="aa" ng-model="js" value="3" id="j3">
+							</li>
+							<li>
+								<label for="j4"></label>
+								<input type="radio" name="aa" ng-model="js" value="4" id="j4">
+							</li>
+							<li>
+								<label for="j5"></label>
+								<input type="radio" name="aa" ng-model="js" value="5" id="j5">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="pjstar">
+					<span>服务评价</span>
+					<div class="d-stars">
+						<ul class="pj-ulimg">
+							<li>
+								<label for="s1"></label>
+								<input type="radio" name="aa" ng-model="ser" value="1" id="s1">
+							</li>
+							<li>
+								<label for="s2"></label>
+								<input type="radio" name="aa" ng-model="ser" value="2" id="s2">
+							</li>
+							<li>
+								<label for="s3"></label>
+								<input type="radio" name="aa" ng-model="ser" value="3" id="s3">
+							</li>
+							<li>
+								<label for="s4"></label>
+								<input type="radio" name="aa" ng-model="ser" value="4" id="s4">
+							</li>
+							<li>
+								<label for="s5"></label>
+								<input type="radio" name="aa" ng-model="ser" value="5" id="s5">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="submit">
+				<button ng-disabled="formdata.$invalid">提交</button>
+			</div>
+		</form>
+	</div>
+</ion-view>	

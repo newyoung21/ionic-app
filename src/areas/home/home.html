@@ -1,0 +1,72 @@
+<ion-view id="home" view-title="home" cache-view="false">
+    <header >
+      <div id="header" >
+        <div class="logo"></div>
+        <div class="ew">
+          <a href="javascript:;"></a>
+        </div>
+        <div class="seach">
+          <input type="text" placeholder="输入服务人员编号">
+          <a href=""><img src="images/seach_03.png" alt="" class="seach-i"></a>
+        </div>
+      </div>
+    </header>
+  <ion-content  has-bouncing="true">
+    <div id="main">
+      <ion-slide-box class="slide" auto-play="true" does-continue="true">
+        <ion-slide>
+          <img src="images/banner2.jpg" alt="">
+        </ion-slide>
+        <ion-slide>
+          <img src="images/banner1.jpg" alt="">
+        </ion-slide>
+        <ion-slide>
+          <img src="images/banner4.jpg" alt="">
+        </ion-slide>
+      </ion-slide-box>
+      <div class="huan"></div>
+      <div class="article">
+        <div class="news">
+          <p>十周年大送礼啦！<a href="" class="more">更多...</a></p>
+        </div>
+      </div>
+      <div class="jj">
+        <div class="jj-main">
+          <p>临平瑶池汗蒸养生馆瑶池汗蒸养生馆天然健康养生，瑶池汗蒸养生馆一直秉承用效果说话、用品德做事、用感恩做人、用诚信经营</p>
+          <div class="onLine">
+            <a href=""><img src="images/iicc_07.png" alt="图片"></a>
+            <p>在线客服</p>
+          </div>
+        </div>
+      </div>
+      <div class="huan"></div>
+      <div class="service">
+        <div class="star">本周服务之星排行榜<a href="#/tab/serve/zy/news" class="more">展开 <b>></b></a></div>
+        <div class="person clearfix" >
+          <div class="perItem" ng-repeat="item in zy track by $index">
+            <a href="#/details/{{item.id}}"><img ng-src="{{item.samllImg}}" alt=""></a>
+            <p>{{item.name}}</p>
+          </div>
+        </div>
+        <div class="person clearfix">
+          <div class="perItem" ng-repeat="item in ys track by $index">
+            <a href="#/details/{{item.id}}"><img ng-src="{{item.smallImg}}" alt=""></a>
+            <p>{{item.name}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="aboutMe">
+        <P class="amT">关于瑶池</P>
+        <div class="amContent person">
+          <div class="amtext">
+            临平瑶池汗蒸养生馆瑶池汗蒸养生馆天然健康养生，瑶池汗蒸养生馆一直秉承用效果说话、用品德做事、用感恩做人、用诚信经营。
+          </div>
+          <div class="amImg">
+            <img src="images/am_03.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+

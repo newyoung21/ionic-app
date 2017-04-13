@@ -1,0 +1,206 @@
+/* */
+p{
+  margin-bottom: 0 ;
+}
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active{
+  color: #ff7a1a !important;
+}
+
+*{
+	margin:0;
+	padding:0;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+}
+*:focus{
+	outline: none;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	color: #121212;
+	padding-bottom: 1.1rem;
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#header{
+	height: 0.96rem;
+	background-color: #ff7a1a;
+	padding: 0.15rem 0.3rem;
+}
+#header .logo{
+	width: 0.67rem;
+	height: 0.64rem;
+	background: url(../images/logo_03.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	float: left;
+}
+#header .ew{
+	width: 0.62rem;
+	height: 0.62rem;
+	float: right;
+	background: url(../images/logo_06.png)0 0 no-repeat;
+	background-size: 100% 100%;
+}
+#header .ew a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#header .seach{
+	margin: 0 0.62rem 0 0.67rem;
+	text-align: center;
+	height: 0.7rem;
+}
+.seach{
+	position: relative;
+}
+.seach input{
+	width: 4rem;
+	height: 0.7rem;
+	border-radius: 3px;
+	border:none;
+	padding: 0.2rem;
+	display: block;
+	margin: 0 auto;
+	color: #121212;
+	border-radius: 5px;
+}
+.seach-i{
+	vertical-align: middle;
+	position: absolute;
+	display: block;
+	width: 0.42rem;
+	height: 0.42rem;
+	right: 0.87rem;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+.clearfix:after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.footerNav{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 1.1rem;
+	background-color: #ffffff;
+	box-shadow: 0 -2px 5px -2px #ff7a1a;
+	border-top: 1px solid #ff7a1a;
+}
+.footerNav .fooN-item{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-box-flex: 1;
+	 -ms-flex: 1;
+	     flex: 1;
+	text-align: center;
+}
+.fooN-item{
+	font-size: 0.28rem;
+
+}
+.fooN-item i{
+	color: #262634;
+	font-size: 0.45rem;
+	display: block;
+	margin:0.1rem 0;
+}
+.active{
+	color: #ff7a1a !important;
+}
+.active i{
+	color: #ff7a1a !important;
+}
+.fooN-item>a{
+	color: #121212;
+	display: inline-block;
+}
+a{
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color:rgba(0, 0, 0, 0);
+	-ms-tap-highlight-color:rgba(0, 0, 0, 0);
+	-o-tap-highlight-color:rgba(0, 0, 0, 0);
+	tap-highlight-color:rgba(0, 0, 0, 0);
+}
+/*后面添加*/
+.time-p{
+	font-size: 0.32rem;
+	color: #666666;
+	margin-bottom: 0.4rem;
+}
+.time-d{
+	height: 0.55rem;
+	color: #afafaf;
+	font-size: 0.28rem;
+	border:none;
+}
+.input{
+	border-radius: 5px;
+	border: 1px solid #aaaaaa;
+	display: inline-block;
+	overflow: hidden;
+}
+.timet{
+	padding: 0.35rem 0.2rem ;
+	background-color: #f5f5f5;
+}
+
+.timeItem .Zperson p{
+	line-height: 1.45em;
+}
+.timeItem>h2{
+	font-size: 0.32rem;
+	color: #121212;
+	font-weight: normal;
+	padding: 0.34rem 0.2rem 0.15rem;
+
+}
+.timeItem{
+	background-color: #f5f5f5;
+	margin-top:0.12rem;
+	padding-bottom: 0.3rem;
+}
+.cancel{
+	position: relative;
+	margin-top: 0.35rem;
+	text-align: right;
+}
+.cancel button{
+	width: 1.8rem;
+	line-height: 0.6rem;
+	height: 0.6rem;
+	font-size:0.28rem;
+	color:#f5f5f5;
+	background-color: #ff7a1a;
+	border: none;
+	border-radius: 5px;
+	position: relative;
+	right: 0.2rem;
+}
+#home ion-content {
+  margin-top: 0.945rem
+}

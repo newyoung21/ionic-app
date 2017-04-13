@@ -1,0 +1,133 @@
+<?php
+
+echo $_GET['callback'].'(
+  {
+    "all":[
+        {
+          "id":98765,
+          "name":"沐沐",
+          "nubmer":3322,
+          "evaluate": 400,
+          "sales": 201,
+          "age": 23,
+          "img": "http://www.qichangad.com/img/2-1.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-1.jpg"
+        },
+        {
+          "id":98766,
+          "name":"青青",
+          "nubmer":3312,
+          "evaluate": 40,
+          "sales": 101,
+          "age": 18,
+          "img": "http://www.qichangad.com/img/2-2.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-2.jpg"
+        },
+        {
+          "id":98764,
+          "name":"茜茜",
+          "nubmer":3522,
+          "evaluate": 401,
+          "sales": 21,
+          "age": 25,
+          "img": "http://www.qichangad.com/img/2-3.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-3.jpg"
+        },
+        {
+          "id":98763,
+          "name":"安生",
+          "nubmer":3622,
+          "evaluate": 560,
+          "sales": 331,
+          "age": 27,
+          "img": "http://www.qichangad.com/img/2-4.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-4.jpg"
+        },
+        {
+          "id":98762,
+          "name":"春娇",
+          "nubmer":3922,
+          "evaluate": 49,
+          "sales": 41,
+          "age": 28,
+          "img": "http://www.qichangad.com/img/2-5.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-5.jpg"
+        },
+        {
+          "id":98761,
+          "name":"熙熙",
+          "nubmer":3322,
+          "evaluate": 36,
+          "sales": 33,
+          "age": 23,
+          "img": "http://www.qichangad.com/img/2-6.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-6.jpg"
+        },
+        {
+          "id":98760,
+          "name":"悠悠",
+          "nubmer":3223,
+          "evaluate": 456,
+          "sales": 1677,
+          "age": 23,
+          "img": "http://www.qichangad.com/img/2-7.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-7.jpg"
+        },
+        {
+          "id":98777,
+          "name":"嫣然",
+          "nubmer":3221,
+          "evaluate": 332,
+          "sales": 22,
+          "age": 21,
+          "img": "http://www.qichangad.com/img/2-8.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-8.jpg"
+        },
+        {
+          "id":98776,
+          "name":"素贞",
+          "nubmer":1122,
+          "evaluate": 40,
+          "sales": 69,
+          "age": 29,
+          "img": "http://www.qichangad.com/img/2-9.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-9.jpg"
+        },
+        {
+          "id":98775,
+          "name":"冬纯",
+          "nubmer":3567,
+          "evaluate": 123,
+          "sales": 321,
+          "age": 23,
+          "img": "http://www.qichangad.com/img/2-10.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-10.jpg"
+        },
+        {
+          "id":98774,
+          "name":"勤勤",
+          "nubmer":3987,
+          "evaluate": 222,
+          "sales": 320,
+          "age": 20,
+          "img": "http://www.qichangad.com/img/2-11.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-11.jpg"
+        },
+        {
+          "id":98773,
+          "name":"湛然",
+          "nubmer":2266,
+          "evaluate": 440,
+          "sales": 111,
+          "age": 17,
+          "img": "http://www.qichangad.com/img/2-12.jpg",
+          "smallImg": "http://www.qichangad.com/img/s2-12.jpg"
+        }
+     ],
+    "count":12
+  }
+);'
+
+?>
+
+

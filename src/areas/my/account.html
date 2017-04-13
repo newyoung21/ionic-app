@@ -1,0 +1,46 @@
+<ion-view view-title="账户与安全" style="background-color: #dbdbdb;">
+	<ion-nav-bar class="color back" align-title="center">
+		<ion-nav-back-button class="button-clear"></ion-nav-back-button>
+	</ion-nav-bar>
+	<ion-content has-subheader="false">
+		<div id="security">
+			<p class="per-item" >
+				<span>会员名</span>
+				<span class="userName">123456</span>
+			</p>
+			<p class="per-item">
+				<a ng-click="ediPhone()">
+					<span>修改手机号码</span>
+					<span class="arrow"><img src="images/user_10.png" alt=""></span>
+					<span class="YcName">15002099663</span> 
+				</a>
+			</p>
+			<p class="per-item">
+				<a ng-click="edipassword()" class="aSex">
+					<span>修改登录密码</span>
+					<span class="arrow"><img src="images/user_10.png" alt=""></span>
+				</a>
+			</p>
+		</div>
+		<div class="padding ">
+			<button class="button button-block color" ng-click="ediLingo()">退出登录</button>
+		</div>
+	</ion-content>
+	<div class="editImg"  ng-click="dd()" ng-show="background"></div>
+	<div class="editI-tent tent" ng-show="password">
+		<form  novalidate name="form" ng-submit="subPassword()">
+			<p>更改密码</p>
+			<p><input type="password" placeholder="请输入当前密码" required></p>
+			<p><input type="password" placeholder="请输入新密码" required></p>
+			<p><button type="submit" class="bSure" ng-disabled="form.$invalid">确定</button></p>
+		</form>
+	</div>
+	<div class=" editI-tent" ng-show="phone">
+		<form  novalidate name="form" ng-submit="subPhone()">
+			<p>更改密码</p>
+			<p>15002099663</p>
+			<p><input type="password" placeholder="请输入验证码"><button class="Obtain">获取验证码</button></p>
+			<p class="tent"><button type="submit" class="bSure" ng-disabled="form.$invalid">确定</button></p>
+		</form>
+	</div>		
+</ion-view>

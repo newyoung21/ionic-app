@@ -1,0 +1,40 @@
+<ion-view >
+	<ion-nav-bar class="color" align-title="left">
+		<ion-nav-back-button class="bby">
+		</ion-nav-back-button>
+	</ion-nav-bar>
+	<ion-content has-subheader="false">
+		<form novalidate name ='register' ng-submit="registerForm()">
+			<div class="list">
+			  <label class="item item-input item-floating-label">
+			    <span class="input-label">名称：</span>
+			    <input type="text" placeholder="名称" required ng-model="user.username" name="name" ng-minlength="2">
+			  </label>
+			  <p class="item ng-hide error" ng-show="register.name.$invalid && register.name.$dirty">
+			  	<span ng-show="register.name.$error.required">请输入用户名</span>
+			  	<span ng-show ="register.name.$error.minlength">亲！不能少于两个字哦！</span>
+			  </p>
+			  <label class="item item-input item-floating-label">
+			    <span class="input-label">手机</span>
+			    <input type="tel" placeholder="手机" required ng-model="user.tel" name="tel" ng-pattern="/^1\d{10}/">
+			  </label>
+			  <p class="item ng-hide error" ng-show="register.tel.$invalid && register.tel.$dirty">
+			  	<span ng-show="register.tel.$error.required">手机号码不能为空</span>
+			  	<span ng-show ="register.tel.$error.pattern">亲！请输入有效手机！</span>
+			  </p>
+			  <label class="item item-input item-floating-label">
+			    <span class="input-label">密码</span>
+			    <input type="password" placeholder="密码" required ng-model="user.password" ng-minlength="6" name="password">
+			  </label>
+			  <p class="item ng-hide error" ng-show="register.password.$invalid && register.password.$dirty">
+			  	<span ng-show="register.password.$error.required">密码不能为空</span>
+			  	<span ng-show ="register.password.$error.minlength">亲！密码不能少于6位数！</span>
+			  </p>
+			</div>
+			<div class="padding">
+			    <button class="button button-block button-positive" ng-disabled="register.$invalid">注册</button>
+			</div>
+		</form>
+		
+	</ion-content>
+</ion-view>

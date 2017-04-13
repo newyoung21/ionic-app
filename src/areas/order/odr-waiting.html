@@ -1,0 +1,26 @@
+<ion-content has-subheader="false">
+  <div class="toServed">
+      <div class="order-data" ng-repeat="item in waiting | orderBy: '-id'">
+        <div class="oddNumbers">
+          服务单号：{{item.order}}
+        </div>
+        <div class="ocMain">
+          <div class="ocm-img"><img ng-src="{{item.img}}" alt=""></div>
+          <div class="ocm-context">
+            <p>{{item.name}}</p>
+            <p>编号：{{item.number}}</p>
+            <p>年龄：{{item.age}}</p>
+            <p>服务时间：{{item.time}}</p>
+          </div>
+        </div>
+        <div class="cansel ">
+          <a ng-click="showPopup({{item.order}})" class="aaa">取消预约</a>
+        </div>
+      </div>
+  </div>
+  <div ng-hide="hide" class="nonos">
+    <h3>亲！你还没有订单哦！</h3>
+    <img src="images/no.png" alt="" class="no-order">
+  </div>
+</ion-content>
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>杭州瑶池足浴</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <!-- 页面css -->
+    <link href="css/all.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- 全局js -->
+    <script src="js/app.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/config.js"></script>
+     <script src="js/indexedDB.js"></script>
+    <script src="js/rem.js"></script>
+    <!-- <script>
+      app.initialize(); 
+      window.onload=function() 
+      { 
+      document.addEventListener(“deviceready” , 
+      function() 
+      { 
+      navigator.splashscreen.hide(); 
+      }, 
+      false); 
+      }
+    </script> -->
+   <!--  功能模块js -->
+   <script src="areas/tab/tabs_route.js"></script>
+   <script src="areas/tab/tabs_controller.js"></script>
+   <script src="areas/home/home_route.js"></script>
+   <script src="areas/home/home_controller.js"></script>
+   <script src="areas/home/home_service.js"></script>
+   <script src="areas/serve/serve_route.js"></script>
+   <script src="areas/serve/serve_controller.js"></script>
+   <script src="areas/YsList/ys_route.js"></script>
+   <script src="areas/YsList/ys_controller.js"></script>
+   <script src="areas/YsList/ys_service.js"></script>
+   <script src="areas/ZyList/zy_route.js"></script>
+   <script src="areas/ZyList/zy_controller.js"></script>
+   <script src="areas/ZyList/zy_service.js"></script>
+   <script src="areas/order/order_route.js"></script>
+   <script src="areas/order/order_controller.js"></script>
+   <script src="areas/order/order_service.js"></script>
+   <script src="areas/components/auto-focus.js"></script>
+   <script src="areas/details/details_route.js"></script>
+   <script src="areas/details/details_controller.js"></script>
+   <script src="areas/details/details_service.js"></script>
+   <script src="areas/my/my_route.js"></script>
+   <script src="areas/my/my_controller.js"></script>
+   <script src="areas/Login/login_route.js"></script>
+   <script src="areas/Login/login_controller.js"></script>
+  </head>
+  <body ng-app="starter">
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

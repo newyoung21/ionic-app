@@ -1,0 +1,53 @@
+<ion-view view-title="个人资料" style="background-color: #dbdbdb;">
+	<ion-nav-bar  align-title="center" class="color back">
+		<ion-nav-back-button class="button-clear"></ion-nav-back-button>
+	</ion-nav-bar>
+	<ion-content has-subheader="false" >
+		<div id="personal">
+		<div class="head" ng-click="ediImg($event)">
+			<span>个人头像</span>
+			<img ng-src="{{user.img}}" alt="" class="headP">
+			<span class="arrow" id="headT"><img src="images/user_10.png" alt=""></span>
+		</div>
+		<p class="per-item" class="userName" ng-click="member()">
+			<span>会员名</span>
+			<span class="arrow"><img src="images/user_10.png" alt=""></span>
+			<span class="userName">{{user.id}}</span>
+		</p>
+		<p class="per-item ycName" ng-click="ediName()">
+			<span>瑶池昵称</span>
+			<span class="arrow"><img src="images/user_10.png" alt=""></span>
+			<span class="YcName">{{user.username}}</span> 
+		</p>
+		<p class="per-item" ng-click="ediSex()">
+			<a href="javascript:;" class="aSex">
+				<span>性别</span>
+				<span class="arrow"><img src="images/user_10.png" alt=""></span>
+				<span class="sex">男</span>
+			</a>
+		</p>
+	</div>
+	</ion-content>
+	<div class="editImg"  ng-click="dd($event)" ng-show="background"></div>
+	<div class="editI-tent" ng-show="img">
+		<form action="">
+			<p>修改图像</p>
+			<p ><a href="javascript:;" class="file">选择文件<input type="file" accept="image/*" ></a></p>
+			<p class="submit-p"><button type="submit">提交</button></p>
+		</form>
+	</div>	
+	<div class="editI-tent" ng-show="sex">
+		<form action="">
+			<p>修改性别</p>
+			<p>男</p>
+			<p>女</p>
+		</form>
+	</div>
+	<div class="editI-tent tent" ng-show="name">
+		<form  novalidate name="form" ng-submit="subName()">
+			<p>修改昵称</p>
+			<p><input type="text" ng-model="username" required></p>
+			<p><button type="submit" class="bSure" ng-disabled="form.$invalid">确定</button></p>
+		</form>
+	</div>
+</ion-view>

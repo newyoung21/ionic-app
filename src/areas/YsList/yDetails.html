@@ -1,0 +1,24 @@
+<ion-view view-title="ser">
+  <ion-content has-bouncing="true" >
+    <div id="service">
+      <div class="zy block">
+        <div class="Zperson" ng-repeat="item in goods track by $index">
+              <div class="Zimg">
+                <a href="#/details/{{item.id}}" nav-direction="forward"><img ng-src="{{item.smallImg}}" alt=""></a>
+              </div>
+              <div class="Zcontent">
+                <p>编号：{{item.nubmer}}</p>
+                <p>人气：{{item.sales}}</p>
+                <p>名字：{{item.name}}</p>
+                <p>年龄：{{item.age}}</p>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div ng-hide="pms_isMoreItemsAvailable" class="jd">
+      <p>亲,没有了哦</p>
+    </div>
+    <ion-infinite-scroll immediate-check="false" on-infinite="loadMore()" ng-if="pms_isMoreItemsAvailable" distance="1%">
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

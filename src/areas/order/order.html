@@ -1,0 +1,30 @@
+<ion-view view-title="order" id="ord">
+  <header>
+    <div id="header">
+      <div class="headLeft"></div>
+      <div class="headRight">
+        <img src="images/user_03.png" alt="" class="head-useI">
+      </div>
+      <div class="head-main">
+        订单中心
+      </div>
+    </div>
+  </header>
+  <ul class="order-nav">
+    <li><a auto-focus ui-sref="tab.order.waiting" class="yellewAc">待服务</a></li>
+    <li><a auto-focus ui-sref="tab.order.inServer" >服务中</a></li>
+    <li><a auto-focus ui-sref="tab.order.toE">待评价</a></li>
+    <li><a auto-focus ui-sref="tab.order.history">历史订单</a></li>
+  </ul>
+  <!-- <div ui-view name="order-inServer"></div>
+  <div ui-view name="order-waiting"></div>
+  <div ui-view name="order-toE"></div>
+  <div ui-view name="order-history"></div> -->
+  <ion-nav-view></ion-nav-view>
+ <!--  <ion-nav-view name="order-inServer" ></ion-nav-view>
+  <ion-nav-view name="order-waiting" ></ion-nav-view>
+  <ion-nav-view name="order-toE" ></ion-nav-view>
+  <ion-nav-view name="order-history"></ion-nav-view> -->
+</ion-view>
+
+

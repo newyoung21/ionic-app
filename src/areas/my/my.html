@@ -1,0 +1,72 @@
+<ion-view id="my" view-title="my" cache-view="false">
+  <header>
+      <div id="header">
+        <div class="headLeft"></div>
+        <div class="headRight">
+          <img src="images/user_03.png" alt="" class="head-useI">
+          <!-- <button class="button ">退出</button> -->
+        </div>
+        <div class="head-main">
+          个人中心
+        </div>
+      </div>
+    </header>
+
+  <ion-content  has-bouncing="true">
+    <div id="user">
+      <div class="me">
+        <div class="me-img">
+          <img ng-src="{{user.img}}" alt="">
+        </div>
+        <div class="me-context">
+          <h3>{{user.username}}</h3>
+          <p>会员号：{{user.id}}</p>
+          <a href="#/personage/{{user.id}}" nav-direction="forward">个人资料</a>
+        </div>
+      </div>
+      <p class="user-item">
+        <a href="javascript:;" nav-direction="forward">
+          <img src="images/whh_03.png" alt="" class="tz">
+          <span>通知</span>
+          <span class="ui-icon"><img src="images/user_10.png" alt=""></span>
+        </a>
+      </p>
+    <!--   <p class="user-item">
+        <a href="#/evaluate" nav-direction="forward">
+          <img src="images/whh_06.png" alt="" class="pj">
+          <span>评价中心</span>
+          <span class="ui-icon"><img src="images/user_10.png" alt=""></span>
+        </a>
+      </p> -->
+      <p class="user-item">
+        <a href="#/collection" nav-direction="forward">
+          <img src="images/whh_08.png" alt="">
+          <span>我的收藏</span>
+          <span class="ui-icon"><img src="images/user_10.png" alt=""></span>
+        </a>
+      </p>
+      <p class="user-item">
+        <a href="#/account/{{user.id}}" nav-direction="forward">
+          <img src="images/whh_10.png" alt="">
+          <span>账户与安全</span>
+          <span class="ui-icon"><img src="images/user_10.png" alt=""></span>
+        </a>
+      </p>
+      <p class="user-item">
+        <a href="#/about" nav-direction="forward">
+          <img src="images/whh_12.png" alt="">
+          <span>关于</span>
+          <span  class="ui-icon"><img src="images/user_10.png" alt=""></span>
+        </a>
+      </p>
+      <p class="user-item">
+        <a href="#/jszc" nav-direction="forward">
+          <img src="images/whh_14.png" alt="">
+          <span>技术支持</span>
+          <span  class="ui-icon"><img src="images/user_10.png" alt=""></span>
+        </a>
+      </p>
+    </div>
+  </ion-content>
+</ion-view>
+

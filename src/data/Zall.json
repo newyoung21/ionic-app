@@ -1,0 +1,153 @@
+<?php
+
+echo $_GET['callback'].'(
+  {
+    "all":[
+        {
+          "id":12453,
+          "name":"沐沐",
+          "nubmer":3322,
+          "evaluate": 400,
+          "sales": 201,
+          "age": 23,
+          "img": "http://www.qichangad.com/img/1.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1.jpg"
+        },
+        {
+          "id":12766,
+          "name":"青青",
+          "nubmer":3312,
+          "evaluate": 40,
+          "sales": 101,
+          "age": 18,
+          "img": "http://www.qichangad.com/img/1-9.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1-9.jpg"
+        },
+        {
+          "id":1276,
+          "name":"茜茜",
+          "nubmer":3522,
+          "evaluate": 401,
+          "sales": 21,
+          "age": 25,
+          "img": "http://www.qichangad.com/img/1-1.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1-1.jpg"
+        },
+        {
+          "id":1265,
+          "name":"安生",
+          "nubmer":3622,
+          "evaluate": 560,
+          "sales": 331,
+          "age": 27,
+          "img": "http://www.qichangad.com/img/1-4.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1-4.jpg"
+        },
+        {
+          "id":1234,
+          "name":"春娇",
+          "nubmer":3922,
+          "evaluate": 49,
+          "sales": 41,
+          "age": 28,
+          "img": "http://www.qichangad.com/img/1-6.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1-6.jpg"
+        },
+        {
+          "id":1221,
+          "name":"熙熙",
+          "nubmer":3322,
+          "evaluate": 36,
+          "sales": 33,
+          "age": 23,
+          "img": "http://www.qichangad.com/img/1-8.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1-8.jpg"
+        },
+        {
+          "id":1211,
+          "name":"悠悠",
+          "nubmer":3223,
+          "evaluate": 456,
+          "sales": 1677,
+          "age": 23,
+          "img": "http://www.qichangad.com/img/1-2.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1-2.jpg"
+        },
+        {
+          "id":23,
+          "name":"嫣然",
+          "nubmer":3221,
+          "evaluate": 332,
+          "sales": 22,
+          "age": 21,
+          "img": "http://www.qichangad.com/img/1-22.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1-22.jpg"
+        },
+        {
+          "id":12,
+          "name":"素贞",
+          "nubmer":1122,
+          "evaluate": 40,
+          "sales": 69,
+          "age": 29,
+          "img": "http://www.qichangad.com/img/1-23.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1-23.jpg"
+        },
+        {
+          "id":123,
+          "name":"冬纯",
+          "nubmer":3567,
+          "evaluate": 123,
+          "sales": 321,
+          "age": 23,
+          "img": "http://www.qichangad.com/img/1-24.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1-24.jpg"
+        },
+        {
+          "id":231,
+          "name":"勤勤",
+          "nubmer":3987,
+          "evaluate": 222,
+          "sales": 320,
+          "age": 20,
+          "img": "http://www.qichangad.com/img/1-25.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1-25.jpg"
+        },
+        {
+          "id":13,
+          "name":"湛然",
+          "nubmer":2266,
+          "evaluate": 440,
+          "sales": 111,
+          "age": 17,
+          "img": "http://www.qichangad.com/img/1-27.jpg",
+            "samllImg": "http://www.qichangad.com/img/s1-27.jpg"
+        },
+        {
+          "id":113,
+          "name":"熙熙",
+          "nubmer":3172,
+          "evaluate": 21,
+          "sales": 12,
+          "age": 18,
+          "img": "http://www.qichangad.com/img/1-28.jpg",
+          "samllImg": "http://www.qichangad.com/img/s1-28.jpg"
+        },
+        {
+         "id":111,
+         "name":"安生",
+         "nubmer":3452,
+         "evaluate": 643,
+         "sales": 4664,
+         "age": 21,
+         "img": "http://www.qichangad.com/img/1-112.jpg",
+         "samllImg": "http://www.qichangad.com/img/s1-112.jpg"
+        }
+     ],
+    "count":14
+  }
+);'
+
+?>
+
+
